@@ -32,7 +32,7 @@ add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
  */
 function wooc_validate_extra_register_fields( $cnpj, $validation_errors ) {
     if ( isset( $_POST['billing_cnpj'] ) && empty( $_POST['billing_cnpj'] ) ) {
-        $validation_errors->add( 'billing_cnpj_error', __( '<strong>Error</strong>: First name is required!', 'woocommerce' ) );
+        $validation_errors->add( 'billing_cnpj_error', __( '<strong>Error</strong>: CNPJ is required!', 'woocommerce' ) );
     }
 
 }
